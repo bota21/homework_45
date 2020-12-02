@@ -1,0 +1,66 @@
+@import media
+@import color
+@import style
+.content_container
+  padding: 120px 80px
+  +size-xl
+    padding: 40px 20px
+  +size-xs
+    padding: 25px 20px
+.content_title
+  width: 50%
+  font-size: 48px
+  line-height: 72px
+  margin-bottom: 60px
+  +size-xl
+    font-size: 38px
+    line-height: 50px
+  +size-m
+    font-size: 30px
+    width: 100%
+    margin-bottom: 40px
+  +size-xs
+    font-size: 28px
+    line-height: 28px
+    margin-bottom: 30px
+.content_item
+  display: grid
+  grid-template-columns: repeat(2, minmax(300px, 686px))
+  grid-template-rows: repeat(2, 1fr)
+  grid-gap: 60px 148px
+  +size-xl
+    grid-gap: 60px
+  +size-m
+    grid-gap: 50px
+    grid-template-columns: 1fr
+.content_wrapper
+  +size-s
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+.content_wrapper_title
+  font-weight: 700
+.content_wrapper_text
+  margin: 24px 0 32px
+  font-size: 18px
+  line-height: 30px
+  letter-spacing: -0.015em
+  color: rgba(0, 0, 0, 0.8)
+  +size-m
+    margin: 10px 0 14px
+  +size-xs
+    font-size: 16px
+    line-height: 24px
+.content_wrapper_button
+  padding: 11px 22px
+  border: 1px solid $blue_light
+  border-radius: 6px
+  font-weight: 500
+  font-size: 15px
+  letter-spacing: -0.015em
+  color: $blue_light
+  &:hover
+    color: $white
+    background: $blue_light
+    border: none

@@ -1,0 +1,135 @@
+body {
+  background: #fff;
+  font-size: 24px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1520px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div, a {
+  transition: 1s;
+}
+
+.content_container {
+  padding: 120px 80px;
+}
+@media screen and (max-width: 1440px) {
+  .content_container {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .content_container {
+    padding: 25px 20px;
+  }
+}
+
+.content_title {
+  width: 50%;
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1440px) {
+  .content_title {
+    font-size: 38px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .content_title {
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .content_title {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.content_item {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 686px));
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 60px 148px;
+}
+@media screen and (max-width: 1440px) {
+  .content_item {
+    grid-gap: 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .content_item {
+    grid-gap: 50px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .content_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.content_wrapper_title {
+  font-weight: 700;
+}
+
+.content_wrapper_text {
+  margin: 24px 0 32px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 900px) {
+  .content_wrapper_text {
+    margin: 10px 0 14px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .content_wrapper_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.content_wrapper_button {
+  padding: 11px 22px;
+  border: 1px solid #18A0FB;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: -0.015em;
+  color: #18A0FB;
+}
+.content_wrapper_button:hover {
+  color: #fff;
+  background: #18A0FB;
+  border: none;
+}
