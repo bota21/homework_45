@@ -1,0 +1,167 @@
+@import media
+@import color
+body
+  background: $white
+  font-size: 24px
+  color: $black
+  font-family: 'Montserrat', sans-serif
+.container
+  width: 1520px
+  margin: 0 auto
+  +size-xl
+    width: 100%
+*
+  box-sizing: border-box
+a
+  text-decoration: none
+  color: inherit
+div, a
+  transition: 1s
+.header_container
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 15px
+  font-weight: 500
+  color: $blue_light
+  padding: 10px 20px
+  position: relative
+  +size-xs
+    flex-wrap: wrap
+.burger_menu
+  display: none
+  flex-direction: column
+  cursor: pointer
+  margin-top: 5px
+  +size-m
+    display: flex
+  span
+    width: 25px
+    height: 4px
+    border-radius: 10px
+    background: $blue_light
+    margin-bottom: 5px
+.menu
+  +size-m
+    display: none
+.menu_item
+  margin-right: 40px
+  +size-m
+    padding-bottom: 20px
+  &:hover
+    color: darken($blue_light, 20%)
+.active
+  display: flex
+  flex-direction: column
+  position: relative
+  transform: translateX(-160px)
+  background: $blue_light
+  color: $white
+  padding: 20px 10px 10px 47px
+  +size-l
+    flex-direction: row
+  +size-m
+    transform: translateX(-123px)
+  +size-xs
+    transform: translateX(-130px)
+.header_buttons
+  margin-right: 80px
+  +size-xl
+    margin-right: 0
+  +size-xs
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
+.header_buttons_item
+  display: inline-block
+  text-align: center
+  padding: 11px 0
+  width: 130px
+  border: 1px solid $blue_light
+  margin-left: 12px
+  border-radius: 10px
+  &:hover
+    color: #fff
+    background: $blue_light
+  +size-m
+    margin-bottom: 10px
+.promo
+  position: relative
+.promo_video
+  width: 100%
+.promo_container
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100%
+.video_control
+  cursor: pointer
+  transform: scale(1)
+  transition: 1s
+  &:hover
+    opacity: 0.9
+    transform: scale(1.2)
+  +size-xl
+    width: 100px
+    height: 100px
+  +size-m
+    width: 70px
+    height: 70px
+.promo_title
+  font-size: 56px
+  padding: 86px 0 40px
+  +size-xl
+    font-size: 40px
+    padding-top: 50px
+  +size-l
+    font-size: 30px
+  +size-s
+    display: none
+.promo_button
+  font-weight: 500
+  font-size: 17px
+  letter-spacing: -0.015em
+  color: $white
+  background: $blue_light
+  border-radius: 6px
+  padding: 16px 52px
+  &:hover
+    background: lighten($blue_light, 15%)
+  +size-s
+    display: none
+.pause
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  background: rgba(0, 0, 0, 0.5)
+  position: relative
+  display: none
+  cursor: pointer
+  opacity: 0
+  transform: scale(1)
+  &:hover
+    opacity: 1
+    transform: scale(2)
+  &::before
+    content: ""
+    width: 5px
+    height: 22px
+    background: #ccc
+    border-radius: 10px
+    position: absolute
+    top: 14px
+    left: 30px
+  &::after
+    content: ""
+    width: 5px
+    height: 22px
+    background: #ccc
+    border-radius: 10px
+    position: absolute
+    top: 14px
+    left: 16px

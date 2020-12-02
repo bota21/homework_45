@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/script.js"></script>
   <title>Document</title>
 </head>
+
 <body>
-  
+  <header class="header">
+    <div class="container header_container">
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="Logo">
+      </a>
+      <nav class="menu">
+        <a href="#" class="menu_item">Features</a>
+        <a href="#" class="menu_item">Pricing</a>
+        <a href="#" class="menu_item">Community</a>
+        <a href="#" class="menu_item">Support</a>
+      </nav>
+      <div class="burger_menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header_buttons">
+        <a href="#" class="header_buttons_item">Log in</a>
+        <a href="#" class="header_buttons_item">Register</a>
+      </div>
+    </div>
+  </header>
+  <div class="promo">
+    <video src="video/Soul.mp4" class="promo_video" id="video"></video>
+    <div class="container promo_container">
+      <img src="img/play.svg" alt="Play" class="video_control" id="control">
+      <h2 class="promo_title">The largest community of photo enthusiasts</h2>
+      <a href="#" class="promo_button">Join Today</a>
+      <div class="pause">
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
