@@ -1,0 +1,56 @@
+@import media
+@import color
+@import style
+.widget
+  background: $grey_light
+.widget_container
+  padding: 120px 40px
+  display: flex
+  align-items: center
+  +size-xl
+    padding: 30px 20px
+  +size-m
+    flex-wrap: wrap
+    justify-content: center
+.widget_text
+  font-size: 36px
+  line-height: 50px
+  letter-spacing: -0.015em
+  color: $black_opacity
+  +size-xl
+    font-size: 24px
+    line-height: 30px
+  +size-m
+    text-align: center
+    font-size: 16px
+.widget_wrapper
+  display: flex
+  margin-left: 84px
+  +size-m
+    margin-top: 20px
+    margin-left: 0
+.widget_wrapper_button
+  width: 192px
+  height: 52px
+  display: inline-block
+  font-weight: 500
+  font-size: 17px
+  letter-spacing: -0.015em
+  color: $blue_light
+  border: 1px solid $blue_light
+  border-radius: 6px
+  display: flex
+  justify-content: center
+  align-items: center
+  &:first-child
+    margin-right: 45px
+    +size-s
+      margin-right: 15px
+  &:hover
+    color: $white
+    background: $blue_light
+  +size-m
+    width: 150px
+    height: 40px
+  +size-s
+    width: 140px
