@@ -29,7 +29,7 @@ div, a {
 }
 
 .content_container {
-  padding: 120px 80px;
+  padding: 120px 0;
 }
 @media screen and (max-width: 1440px) {
   .content_container {

@@ -1,0 +1,41 @@
+@import media
+@import color
+@import style
+.header_footer_container
+  padding: 120px 0 48px
+  border-bottom: 1px solid lighten($black_opacity, 70%)
+  display: flex
+  justify-content: space-between
+  align-items: center
+  +size-xl
+    padding: 40px 20px
+  +size-m
+    padding: 20px 20px 0 20px
+  +size-xs
+    flex-direction: column
+.header_footer_links
+  +size-m
+    display: flex
+    flex-direction: column
+  +size-xs
+    flex-direction: row
+    justify-content: space-between
+.header_footer_links_link
+  font-weight: 700
+  font-size: 15px
+  letter-spacing: -0.015em
+  margin-right: 85px
+  &:last-child
+    margin-right: 0
+  +size-xl
+    margin-right: 30px
+  +size-m
+    margin-bottom: 30px
+.header_footer_logo
+  margin: 0 200px
+  +size-xl
+    margin: 0 100px
+  +size-l
+    margin: 0 36px
+  +size-xs
+    margin-bottom: 30px
