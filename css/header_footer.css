@@ -70,6 +70,9 @@ div, a {
   letter-spacing: -0.015em;
   margin-right: 85px;
 }
+.header_footer_links_link:hover {
+  color: #024978;
+}
 .header_footer_links_link:last-child {
   margin-right: 0;
 }
